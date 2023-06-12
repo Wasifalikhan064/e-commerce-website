@@ -16,6 +16,8 @@ const Header = () => {
     const [scrolled,setScrolled]=useState(false);
     const [showCart,setShowCart]=useState(false);
     const [showSearch,setShowSearch]=useState(false);
+    const {cartCount} = useContext(Context);
+    const navigate = useNavigate()
     const handleScroll = ()=>{
         const offset=window.scrollY;
         if(offset > 150){
@@ -37,11 +39,11 @@ const Header = () => {
                     <header className={`main-header ${scrolled ? "sticky-header" : ""}`}>
                         <div className="header-content">
                             <ul className="left">
-                                <li>Home</li>
+                                <li onClick={() => navigate("/")}>Home</li>
                                 <li>About</li>
                                 <li>Categories</li>
                             </ul>
-                            <div className="center">HWASTORE.</div>
+                            <div className="center" onClick={() => navigate("/")}>HWASTORE.</div>
                             <div className="right">
                                 <div className="search">
                                     <TbSearch onClick={()=> setShowSearch(true)} /></div>
@@ -50,7 +52,7 @@ const Header = () => {
                                 
                                 <span className="cart-icon" onClick={()=> setShowCart(true)}>
                                 <CgShoppingCart/>
-                                <span>5</span>
+                                {!!cartCount && <span>{cartCount}</span>}
                                 </span>
                             </div>
                         </div>
