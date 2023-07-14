@@ -1,67 +1,73 @@
-# e-commerce-website
-## Available Scripts
+# HWA Store🛒
 
-In the project directory, you can run:
+An E-Commerce website made with React-18,Strapi as Api and stripe as payment gateway
 
-### `npm start`
+## Table of Contents
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Screenshots](#screenshots)
+  - [Home](#home)
+  - [Api](#api)
+  - [Account](#account)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## About The Project
+Welcome to HWA Store, your ultimate destination for all your electronic needs! At HWA Store, we pride ourselves on providing a vast selection of high-quality electronic products, exceptional customer service, and an unmatched shopping experience. Whether you're a tech enthusiast, a professional seeking cutting-edge gadgets, or a casual shopper in search of everyday electronics, we have something for everyone.
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://devdocs.io/css/)
+- [React.js](https://reactjs.org)(Front-End)
+- [Strapi](https://strapi.io/)(Api)
+- [Stripe](https://stripe.com/en-in)(Payment Method)
 
-### `npm run build`
+## Screenshots
+### Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Home](https://github.com/Wasifalikhan064/e-commerce-website/blob/main/screenshots/home.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Api
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Api](https://github.com/Wasifalikhan064/e-commerce-website/blob/main/screenshots/strapi.PNG)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Account
+![Account Image](https://github.com/Wasifalikhan064/e-commerce-website/blob/main/screenshots/stripe.PNG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
+### Prerequisites
+- [Node.js](https://nodejs.org/en/) version 18 or earlier
+- [Git](https://git-scm.com/)
+- [React.js](https://reactjs.org) react-18 version
+- [Strapi](https://strapi.io/) version 4.11.0
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo and change the directory
+```sh
+git clone git@github.com:Wasifalikhan064/e-commerce-website.git
+cd client/
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. You need to install Strapi then 
+```
+cd api/
+npm run develop
+```
+4. To start the project :
+```
+npm start
+```
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
